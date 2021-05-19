@@ -8,7 +8,7 @@ import "./App.css"
 //Layout components
 //UI components
 //License
-window.Smart.License = "A9EEFB86-EED7-4D65-BB68-ED899DC993F8"
+window.Smart.License = "PUT SMART LICENSE KEY HERE"
 
 class App extends React.Component {
   constructor(props) {
