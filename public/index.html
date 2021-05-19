@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head profile="http://www.w3.org/1999/xhtml/vocab">
+      <!-- THIS IS FROM NON-HO SCRIPTS-->
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+      <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+      <!-- END OF NON-HO SCRIPTS-->
+
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+      <link rel="shortcut icon" href="https://www.humanitarianoutcomes.org/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+      <title>Praxis</title>
+      <link type="text/css" rel="stylesheet" href="https://www.humanitarianoutcomes.org/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+      <link type="text/css" rel="stylesheet" href="https://www.humanitarianoutcomes.org/sites/default/files/css/css_LS9OUalDR9-d_lCAvF3yUWjNU6yF8ZBm84jEPRvoyuQ.css" media="all" />
+      <link type="text/css" rel="stylesheet" href="https://www.humanitarianoutcomes.org/sites/default/files/css/css_N9yWDkaSa36n6nrFf8Nh1tKSkmungW2qt136T108IGI.css" media="all" />
+      <link type="text/css" rel="stylesheet" href="https://www.humanitarianoutcomes.org/sites/default/files/css/css_z9GRtPxUUbirK1-kJ5h4AwBTReYpl1qHSeVvAOpwWWg.css" media="all" />
+      <link type="text/css" rel="stylesheet" href="https://www.humanitarianoutcomes.org/sites/default/files/css/css_Hex-pwCTDDfQD41aRswi2OFNCxosYgUEBnZsKNQ5BWo.css" media="print" />
+      <link type="text/css" rel="stylesheet" href="https://www.humanitarianoutcomes.org/sites/default/files/css/css_Nv0ct-zkzztuah_LbaPFF8ZkdSEk-LxBtTWMm9mN_F8.css" media="screen" />
+
+      <!--[if lte IE 8]>
+        <link type="text/css" rel="stylesheet" href="https://www.humanitarianoutcomes.org/themes/seven/ie.css?qoa4sz" media="all" />
+      <![endif]-->
+
+      <!--[if lte IE 7]>
+        <link type="text/css" rel="stylesheet" href="https://www.humanitarianoutcomes.org/themes/seven/ie7.css?qoa4sz" media="all" />
+      <![endif]-->
+
+      <!--[if lte IE 6]>
+        <link type="text/css" rel="stylesheet" href="https://www.humanitarianoutcomes.org/themes/seven/ie6.css?qoa4sz" media="all" />
+      <![endif]-->
+      <script type="text/javascript" src="https://www.humanitarianoutcomes.org/sites/default/files/js/js_bHixdNqIm_fGV7c3IlqVJl-OQXz4T0rdcigI0kCjuGg.js"></script>
+      <script type="text/javascript" src="https://www.humanitarianoutcomes.org/sites/default/files/js/js_H7q2xORKmR9AN8Qx5spKEIBp7R_wG2apAswJoCUZY7I.js"></script>
+      <script type="text/javascript" src="https://www.humanitarianoutcomes.org/sites/default/files/js/js_vNfk0E4QpZNmnRYJCe6E7LXYcNSNtAJmZCBP8gL0YD0.js"></script>
+      <script type="text/javascript">
+        //--><![CDATA[//><!--
+        jQuery.extend(Drupal.settings, { basePath: "\/", pathPrefix: "", ajaxPageState: { theme: "seven", theme_token: "mIMnJxZAoDG3IBD3lO5YnzGxjNPmoZkBctMv3GfKwsw", js: { "sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js": 1, "misc\/jquery-extend-3.4.0.js": 1, "misc\/jquery-html-prefilter-3.5.0-backport.js": 1, "misc\/jquery.once.js": 1, "misc\/drupal.js": 1, "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js": 1, "modules\/toolbar\/toolbar.js": 1 }, css: { "modules\/system\/system.base.css": 1, "modules\/system\/system.menus.css": 1, "modules\/system\/system.messages.css": 1, "modules\/system\/system.theme.css": 1, "modules\/system\/system.admin.css": 1, "sites\/all\/modules\/contrib\/date\/date_api\/date.css": 1, "modules\/field\/theme\/field.css": 1, "modules\/node\/node.css": 1, "modules\/search\/search.css": 1, "modules\/user\/user.css": 1, "sites\/all\/modules\/contrib\/views\/css\/views.css": 1, "sites\/all\/modules\/contrib\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css": 1, "sites\/all\/modules\/contrib\/ctools\/css\/ctools.css": 1, "modules\/toolbar\/toolbar.css": 1, "modules\/toolbar\/toolbar-print.css": 1, "themes\/seven\/reset.css": 1, "themes\/seven\/style.css": 1, "themes\/seven\/ie.css": 1, "themes\/seven\/ie7.css": 1, "themes\/seven\/ie6.css": 1 } }, tableHeaderOffset: "Drupal.toolbar.height" })
+        //--><!]]>
+      </script>
+      <title>Praxis</title>
+    </head>
+  </head>
+  <body class="html not-front logged-in no-sidebars page-admin page-admin-gdho toolbar toolbar-drawer">
+    <div id="skip-link">
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+    <div class="region region-page-top">
+      <div id="toolbar" class="toolbar overlay-displace-top clearfix">
+        <div class="toolbar-menu clearfix">
+          <ul id="toolbar-home">
+            <li class="home first last">
+              <a href="/" title="Home"><span class="home-link">Home</span></a>
+            </li>
+          </ul>
+          <ul id="toolbar-user">
+            <li class="account first">
+              <a href="#" title="User account">Hello <strong>{{email}}</strong></a>
+            </li>
+            <li class="logout last"><a href="/logout">Log out</a></li>
+          </ul>
+          <h2 class="element-invisible">Administrative toolbar</h2>
+          <ul id="toolbar-menu">
+            <li class="menu-1 path-admin-rolling first">
+              <a href="#" id="toolbar-link-views-rolling" title=""><span class="icon"> </span>Workspaces<span class="element-invisible">Workspaces</span></a>
+            </li>
+            <li class="menu-2 path-views-numberofincidents">
+              <a href="#" id="toolbar-link-views-numberofincidents" title=""> <span class="icon"></span>Databases<span class="element-invisible">Databases</span></a>
+            </li>
+            <li class="menu-3 path-views-totalaffected">
+              <a href="#" id="toolbar-link-views-totalaffected" title=""><span class="icon"> </span>Users<span class="element-invisible">Users</span></a>
+            </li>
+            <li class="menu-4 path-views-percentkilled">
+              <a href="#" id="toolbar-link-views-percentkilled" title="" class="icon"><span class="icon"> </span>Profile<span class="element-invisible">Profile</span></a>
+            </li>
+            <li class="menu-5 path-views-meansofattack">
+              <a href="#" id="toolbar-link-views-meansofattack" title=""><span class="icon"> </span>Tables <span class="element-invisible">Tables</span></a>
+            </li>
+            <li class="menu-6 path-views-location last">
+              <a href="#" id="toolbar-link-views-location" title=""><span class="icon"> </span>Other <span class="element-invisible">Other</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="toolbar-drawer clearfix"></div>
+      </div>
+    </div>
+
+    <!-- NO longer Needed, Remove to make space for table
+    <div id="branding" class="clearfix">
+      <h2 class="element-invisible">You are here</h2>
+      <div class="breadcrumb"><a href="/">Home</a> » <a href="/admin">Administration</a></div>
+      <h1 class="page-title">AWSD Outliers</h1>
+    </div>
+    -->
+    <div id="page">
+      <div class="tabs-secondary clearfix"></div>
+      <div id="content" class="clearfix">
+        <!-- -->
+        <div id="root"></div>
+      </div>
+    </div>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

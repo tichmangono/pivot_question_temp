@@ -1,0 +1,191 @@
+/*####################################*/
+/* KANBAN STYLING
+/*####################################*/
+/* This is the CSS used in the demo */
+#phaseOneKanban,
+#phaseTwoKanban {
+  width: 100%;
+  height: 100%;
+}
+
+smart-button,
+#status,
+#idSelector {
+  width: 100%;
+}
+
+smart-button {
+  margin-bottom: 10px;
+}
+
+.smart-badge {
+  margin-right: 5px;
+}
+
+/*####################################*/
+/* GRID STYLING
+/*####################################*/
+/* This is the CSS used in the demo */
+#grid {
+  width: 100%;
+  height: 100%;
+}
+
+/*####################################*/
+/* PIVOT STYLING
+/*####################################*/
+
+#mainContainer {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+#mainContainer * {
+  box-sizing: border-box;
+}
+
+#tableContainer,
+#pivotTable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#tableContainer {
+  display: flex;
+}
+
+#table {
+  width: calc(100% - var(--smart-pivot-panel-width));
+  height: 100%;
+}
+
+#table > .smart-container {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--smart-border-width) solid var(--smart-border);
+  border-top-right-radius: var(--smart-border-top-right-radius);
+  border-bottom-right-radius: var(--smart-border-bottom-right-radius);
+  border-left: none;
+  width: var(--smart-pivot-panel-width);
+  height: 100%;
+  padding: 50px;
+  text-align: justify;
+  font-family: var(--smart-font-family);
+  font-size: 13px;
+  font-style: italic;
+}
+
+#pivotTable smart-pivot-panel {
+  margin-top: 50px;
+  height: calc(100% - 50px);
+}
+
+#switchContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  border-bottom: var(--smart-border-width) solid var(--smart-border);
+  width: var(--smart-pivot-panel-width);
+  height: 50px;
+  font-family: var(--smart-font-family);
+}
+
+#switchButton {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#mainContainer.pivot-mode #table,
+#mainContainer.table-mode #pivotTable {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#mainContainer.pivot-mode #switchContainer {
+  box-shadow: -1px 0px 0px 0px var(--smart-border);
+}
+
+/*####################################*/
+/* TAB STYLING
+/*####################################*/
+
+smart-tabs {
+  width: 100%;
+  height: 700px;
+}
+
+@media only screen and (max-width: 700px) {
+  smart-tabs {
+    width: 100%;
+    height: 100%;
+  }
+}
+.smart-tabs-selection-bar {
+  background: transparent;
+}
+.styleOneTabs .smart-tab-strip {
+  background-color: #3e3e3e;
+}
+
+.styleOneTabs .smart-tab-label-container {
+  color: #f2f2f2;
+}
+
+.styleOneTabs .smart-tab-label-container.smart-tab-selected {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.styleOneTabs .smart-tab-label-container.smart-tab-hovered {
+  background-color: #5e5e5e;
+  color: #f2f2f2;
+}
+
+#styleTwoTab {
+  border-color: #4384b7;
+}
+
+#styleTwoTab .smart-tab-strip {
+  background-color: #4384b7;
+}
+
+#styleTwoTab .smart-tab-label-container {
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent transparent #4384b7 transparent;
+  color: #f2f2f2;
+}
+
+#styleTwoTab .smart-tab-label-container.smart-tab-selected,
+#styleTwoTab .smart-tab-label-container.smart-tab-hovered {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#styleTwoTab .smart-tab-label-container.smart-tab-selected {
+  border-color: #4384b7 #4384b7 #f2f2f2 #4384b7;
+  background-color: #f2f2f2;
+  color: black;
+}
+
+#styleTwoTab .smart-tab-label-container.smart-tab-hovered {
+  border-bottom-color: transparent;
+  background-color: #366d93;
+  color: #f2f2f2;
+}
+
+/*####################################*/
+/* BULLET DRAFT STYLING
+/*####################################*/
