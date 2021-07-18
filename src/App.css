@@ -8,6 +8,11 @@
   height: 100%;
 }
 
+.smart-kanban {
+  width: calc(100% - 200px);
+  height: 100%;
+}
+
 smart-button,
 #status,
 #idSelector {
@@ -117,6 +122,12 @@ smart-button {
   box-shadow: -1px 0px 0px 0px var(--smart-border);
 }
 
+/*
+.smart-pivot-table {
+  height: 800px;
+}
+*/
+
 /*####################################*/
 /* TAB STYLING
 /*####################################*/
@@ -186,6 +197,113 @@ smart-tabs {
   color: #f2f2f2;
 }
 
-/*####################################*/
+/* kanban */
+smart-button,
+#status,
+#idSelector {
+  width: 100%;
+}
+
+smart-button {
+  margin-bottom: 10px;
+}
+
+.smart-badge {
+  margin-right: 5px;
+}
+
+/*#################################*/
 /* BULLET DRAFT STYLING
+/*#################################*/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.smart-editor {
+  width: calc(100% - 200px);
+  height: 100%;
+}
+
+@media (max-width: 750px) {
+  .smart-editor {
+    width: 100%;
+  }
+}
+
+.img-left {
+  margin: 0.5em 1.4em 1.3em 0;
+  float: left;
+  border: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.img-left img {
+  width: 100%;
+  float: initial;
+}
+
+.img-left .thumbcaption {
+  width: 220px;
+}
+
+.options {
+  padding: 20px;
+  background-color: rgba(191, 191, 191, 0.15);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 190px;
+}
+
+@media (max-width: 750px) {
+  .options {
+    position: relative;
+    top: 30px;
+    width: 240px;
+    margin: 0 auto;
+  }
+}
+
 /*####################################*/
+/* MY EDITOR STYLING
+/*####################################*/
+.app {
+  /*text-align: center;*/
+  /*background-color: #2a2a2ab5;*/
+  height: 100vh;
+}
+.app .rich-editor {
+  padding: 0rem;
+}
+
+.rich-editor .rdw-editor-main {
+  background-color: #fff;
+}
+
+.rich-editor .DraftEditor-editorContainer {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.draft-editor-wrapper {
+  border: 1px solid #ccc;
+}
+
+.html-view {
+  background-color: #fff;
+  color: #000;
+  margin: auto;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  color: #fff;
+}

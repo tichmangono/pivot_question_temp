@@ -8,3 +8,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+smart-grid {
+  height: auto;
+  width: 60%;
+}
+
+#log {
+  font-size: 12px;
+}
+
+.demo-description {
+  width: 60%;
+}
